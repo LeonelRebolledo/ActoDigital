@@ -1,0 +1,29 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="36" fill="#0A0A16"/>
+  <circle cx="888" cy="218" r="156" fill="#17384C"/>
+  <circle cx="326" cy="664" r="176" fill="#0F2B36"/>
+  <rect x="132" y="146" width="936" height="608" rx="34" fill="#111122" stroke="#1EE3D1" stroke-opacity="0.18"/>
+  <rect x="194" y="210" width="266" height="420" rx="28" fill="#111111" stroke="#7AE9FF" stroke-opacity="0.22"/>
+  <rect x="230" y="250" width="146" height="18" rx="9" fill="#1EE3D1" fill-opacity="0.72"/>
+  <rect x="230" y="298" width="182" height="72" rx="20" fill="#181936"/>
+  <rect x="230" y="396" width="150" height="14" rx="7" fill="#8AD9EC" fill-opacity="0.54"/>
+  <rect x="230" y="428" width="174" height="14" rx="7" fill="#8AD9EC" fill-opacity="0.54"/>
+  <rect x="230" y="460" width="124" height="14" rx="7" fill="#8AD9EC" fill-opacity="0.54"/>
+  <rect x="230" y="526" width="162" height="46" rx="23" fill="#1EE3D1" fill-opacity="0.18" stroke="#1EE3D1" stroke-opacity="0.34"/>
+  <rect x="510" y="246" width="486" height="104" rx="28" fill="#13152A" stroke="#7AE9FF" stroke-opacity="0.22"/>
+  <rect x="552" y="286" width="148" height="16" rx="8" fill="#1EE3D1"/>
+  <rect x="510" y="390" width="486" height="176" rx="34" fill="#121224" stroke="#7AE9FF" stroke-opacity="0.22"/>
+  <rect x="552" y="438" width="214" height="20" rx="10" fill="#F4F8FF"/>
+  <rect x="552" y="478" width="250" height="12" rx="6" fill="#8AD9EC" fill-opacity="0.58"/>
+  <rect x="552" y="508" width="218" height="12" rx="6" fill="#8AD9EC" fill-opacity="0.58"/>
+  <rect x="552" y="538" width="162" height="12" rx="6" fill="#8AD9EC" fill-opacity="0.58"/>
+  <path d="M688 650C746.437 650 794 602.437 794 544H836C836 625.752 769.752 692 688 692V650Z" fill="#1EE3D1" fill-opacity="0.28"/>
+  <path d="M812 202L990 318" stroke="#9FEFFF" stroke-opacity="0.42" stroke-width="3" stroke-linecap="round"/>
+  <path d="M806 420L1048 420" stroke="#9FEFFF" stroke-opacity="0.42" stroke-width="3" stroke-linecap="round"/>
+  <path d="M286 684L462 616" stroke="#9FEFFF" stroke-opacity="0.42" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="996" cy="320" r="16" fill="#8C7BFF" fill-opacity="0.56"/>
+  <circle cx="468" cy="614" r="14" fill="#1EE3D1" fill-opacity="0.62"/>
+  <text x="228" y="350" fill="#F4F8FF" font-family="Arial, sans-serif" font-size="34" font-weight="700">Socios</text>
+  <text x="552" y="318" fill="#F4F8FF" font-family="Arial, sans-serif" font-size="28" font-weight="700">Operacion + Tecnologia + Gestion</text>
+  <text x="552" y="610" fill="#8AD9EC" font-family="Arial, sans-serif" font-size="24">Colaboracion orientada a impacto real</text>
+</svg>
