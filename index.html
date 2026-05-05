@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
@@ -14,7 +14,11 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="./public/assets/brand-mark.svg" type="image/svg+xml" />
+    <link
+      rel="icon"
+      href="./public/assets/brand-mark.svg"
+      type="image/svg+xml"
+    />
     <link rel="stylesheet" href="./src/styles/main.css" />
   </head>
   <body>
@@ -23,55 +27,152 @@
         <div class="container">
           <nav class="topbar">
             <a class="brand" href="#inicio">
-              <img src="./public/assets/brand-mark.svg" alt="Logo de Acto Digital" />
+              <img
+                src="./public/assets/brand-mark.svg"
+                alt="Logo de Acto Digital"
+              />
               <div>
                 <span>Acto Digital</span>
-                <small data-i18n="brand.badge">SOLUCIONES DIGITALES LISTAS PARA ESCALAR</small>
+                <small data-i18n="brand.badge"
+                  >SOLUCIONES DIGITALES LISTAS PARA ESCALAR</small
+                >
               </div>
             </a>
             <div class="nav-group">
               <a class="nav-link" href="#inicio" data-i18n="nav.home">Inicio</a>
-              <a class="nav-link" href="#servicios" data-i18n="nav.services">Servicios</a>
-              <a class="nav-link" href="#sobre-nosotros" data-i18n="nav.about">Sobre nosotros</a>
-              <a class="nav-link" href="#socios" data-i18n="nav.partners">Socios</a>
-              <a class="nav-link" href="#soporte" data-i18n="nav.support">Soporte</a>
-              <a class="nav-link" href="#proceso" data-i18n="nav.process">Proceso</a>
+              <a class="nav-link" href="#servicios" data-i18n="nav.services"
+                >Servicios</a
+              >
+              <a class="nav-link" href="#sobre-nosotros" data-i18n="nav.about"
+                >Sobre nosotros</a
+              >
+              <a class="nav-link" href="#socios" data-i18n="nav.partners"
+                >Socios</a
+              >
+              <a class="nav-link" href="#soporte" data-i18n="nav.support"
+                >Soporte</a
+              >
+              <a class="nav-link" href="#proceso" data-i18n="nav.process"
+                >Proceso</a
+              >
               <a class="nav-link" href="#faq" data-i18n="nav.faq">FAQ</a>
-              <a class="nav-link" href="#contacto" data-i18n="nav.contact">Contacto</a>
+              <a class="nav-link" href="#contacto" data-i18n="nav.contact"
+                >Contacto</a
+              >
             </div>
             <div class="language-switcher">
-              <span class="language-label" data-i18n="language.label">Idioma</span>
+              <span class="language-label" data-i18n="language.label"
+                >Idioma</span
+              >
               <div class="language-buttons">
-                <button class="lang-button is-active" type="button" data-lang="es">ES</button>
-                <button class="lang-button" type="button" data-lang="en">EN</button>
-                <button class="lang-button" type="button" data-lang="zh">中文</button>
+                <button
+                  class="lang-button is-active"
+                  type="button"
+                  data-lang="es"
+                >
+                  ES
+                </button>
+                <button class="lang-button" type="button" data-lang="en">
+                  EN
+                </button>
+                <button class="lang-button" type="button" data-lang="zh">
+                  中文
+                </button>
               </div>
+              <button id="toggleTheme" class="theme-btn">
+                <!-- Icono Luna (Negra en modo claro) -->
+                <svg
+                  class="moon"
+                  xmlns="http://w3.org"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+                  ></path>
+                </svg>
+
+                <!-- Icono Sol (Blanco en modo oscuro) -->
+                <svg
+                  class="sun"
+                  xmlns="http://w3.org"
+                  width="28"
+                  height="28"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                  <line x1="1" y1="12" x2="3" y2="12"></line>
+                  <line x1="21" y1="12" x2="23" y2="12"></line>
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+              </button>
             </div>
-            <a class="topbar-pill" href="#contacto" data-i18n="topbar.pill">Soluciones web y soporte</a>
+            <a class="topbar-pill" href="#contacto" data-i18n="topbar.pill"
+              >Soluciones web y soporte</a
+            >
           </nav>
 
           <section class="hero-grid">
             <div class="hero-copy reveal is-visible">
-              <span class="eyebrow" data-i18n="hero.eyebrow">Soluciones digitales listas para escalar</span>
-              <h1 data-i18n="hero.title">Desarrollo web, APIs y soporte de software con foco comercial.</h1>
+              <span class="button button-secondary" data-i18n="hero.eyebrow"
+                >Soluciones digitales listas para escalar</span
+              >
+              <h1 data-i18n="hero.title">
+                Desarrollo web, APIs y soporte de software con foco comercial.
+              </h1>
               <p class="lead" data-i18n="hero.lead">
-                Construimos páginas y plataformas para vender, automatizar procesos y asistir a tus clientes
-                con una experiencia técnica clara, rápida y confiable.
+                Construimos páginas y plataformas para vender, automatizar
+                procesos y asistir a tus clientes con una experiencia técnica
+                clara, rápida y confiable.
               </p>
               <p class="sublead" data-i18n="hero.sublead">
-                Base editable para sumar luego teléfonos, imágenes reales de la empresa, casos de éxito y
-                nuevos servicios.
+                Base editable para sumar luego teléfonos, imágenes reales de la
+                empresa, casos de éxito y nuevos servicios.
               </p>
 
               <div class="hero-actions">
-                <a class="button button-primary" href="#contacto" data-i18n="hero.primaryCta">Solicitar propuesta</a>
-                <a class="button button-secondary" href="#servicios" data-i18n="hero.secondaryCta">Ver servicios</a>
+                <a
+                  class="button button-secondary"
+                  href="#contacto"
+                  data-i18n="hero.primaryCta"
+                  >Solicitar propuesta</a
+                >
+                <a
+                  class="button button-secondary"
+                  href="#servicios"
+                  data-i18n="hero.secondaryCta"
+                  >Ver servicios</a
+                >
               </div>
 
               <ul class="trust-list">
-                <li data-i18n="hero.point1">Arquitectura preparada para seguir agregando secciones y páginas.</li>
-                <li data-i18n="hero.point2">Diseño responsive para escritorio, tablet y celular.</li>
-                <li data-i18n="hero.point3">Contenido centralizado para editar marca, números e imágenes rápido.</li>
+                <li data-i18n="hero.point1">
+                  Arquitectura preparada para seguir agregando secciones y
+                  páginas.
+                </li>
+                <li data-i18n="hero.point2">
+                  Diseño responsive para escritorio, tablet y celular.
+                </li>
+                <li data-i18n="hero.point3">
+                  Contenido centralizado para editar marca, números e imágenes
+                  rápido.
+                </li>
               </ul>
             </div>
 
@@ -106,8 +207,13 @@
                   <div class="device-notch"></div>
                   <div class="device-screen">
                     <strong>Acto Digital</strong>
-                    <p data-i18n="hero.deviceText">Diseño, desarrollo, soporte y escalabilidad para servicios digitales.</p>
-                    <div class="device-button" data-i18n="hero.deviceButton">Crear experiencia</div>
+                    <p data-i18n="hero.deviceText">
+                      Diseño, desarrollo, soporte y escalabilidad para servicios
+                      digitales.
+                    </p>
+                    <div class="device-button" data-i18n="hero.deviceButton">
+                      Crear experiencia
+                    </div>
                   </div>
                 </div>
               </div>
@@ -134,20 +240,30 @@
         <section class="section section-soft" id="servicios">
           <div class="container">
             <div class="section-heading reveal is-visible">
-              <span class="eyebrow" data-i18n="services.eyebrow">Servicios</span>
-              <h2 id="servicios" data-i18n="services.title">Soluciones pensadas para captar clientes y sostener el crecimiento.</h2>
-              <p data-i18n="services.description">
-                La página ya prioriza los servicios que mencionaste y deja abierta la puerta para agregar más
-                productos, verticales o casos de éxito.
-              </p>
+              <span class="eyebrow" data-i18n="services.eyebrow"
+                >Servicios</span
+              >
+              <h2 id="servicios" data-i18n="services.title">
+                Soluciones pensadas para captar clientes y sostener el
+                crecimiento.
+              </h2>
+              <h3 data-i18n="services.description">
+                La página ya prioriza los servicios que mencionaste y deja
+                abierta la puerta para agregar más productos, verticales o casos
+                de éxito.
+              </h3>
             </div>
             <div class="services-grid">
               <article class="service-card reveal is-visible">
-                <div class="service-eyebrow" data-i18n="services.featured">Servicio destacado</div>
-                <h3 data-i18n="services.card1.title">Venta de aplicaciones web</h3>
+                <div class="service-eyebrow" data-i18n="services.featured">
+                  Servicio destacado
+                </div>
+                <h3 data-i18n="services.card1.title">
+                  Venta de aplicaciones web
+                </h3>
                 <p data-i18n="services.card1.description">
-                  Presentamos soluciones listas para comercializar, con enfoque en conversión, demostración
-                  de valor y llamada a la acción.
+                  Presentamos soluciones listas para comercializar, con enfoque
+                  en conversión, demostración de valor y llamada a la acción.
                 </p>
                 <ul class="chip-list">
                   <li>Landings comerciales</li>
@@ -157,11 +273,14 @@
               </article>
 
               <article class="service-card reveal is-visible">
-                <div class="service-eyebrow" data-i18n="services.featured">Servicio destacado</div>
+                <div class="service-eyebrow" data-i18n="services.featured">
+                  Servicio destacado
+                </div>
                 <h3 data-i18n="services.card2.title">Desarrollo web</h3>
                 <p data-i18n="services.card2.description">
-                  Creamos sitios institucionales, plataformas internas y experiencias a medida con una base
-                  técnica ordenada para crecer en equipo.
+                  Creamos sitios institucionales, plataformas internas y
+                  experiencias a medida con una base técnica ordenada para
+                  crecer en equipo.
                 </p>
                 <ul class="chip-list">
                   <li>Sitios corporativos</li>
@@ -171,11 +290,14 @@
               </article>
 
               <article class="service-card reveal is-visible">
-                <div class="service-eyebrow" data-i18n="services.featured">Servicio destacado</div>
+                <div class="service-eyebrow" data-i18n="services.featured">
+                  Servicio destacado
+                </div>
                 <h3 data-i18n="services.card3.title">APIs e integraciones</h3>
                 <p data-i18n="services.card3.description">
-                  Conectamos sistemas, automatizamos tareas y dejamos preparada la operación para integrarse
-                  con CRM, formularios o herramientas propias.
+                  Conectamos sistemas, automatizamos tareas y dejamos preparada
+                  la operación para integrarse con CRM, formularios o
+                  herramientas propias.
                 </p>
                 <ul class="chip-list">
                   <li>REST APIs</li>
@@ -185,11 +307,16 @@
               </article>
 
               <article class="service-card reveal is-visible">
-                <div class="service-eyebrow" data-i18n="services.featured">Servicio destacado</div>
-                <h3 data-i18n="services.card4.title">Reparación en línea y mesa de ayuda</h3>
+                <div class="service-eyebrow" data-i18n="services.featured">
+                  Servicio destacado
+                </div>
+                <h3 data-i18n="services.card4.title">
+                  Reparación en línea y mesa de ayuda
+                </h3>
                 <p data-i18n="services.card4.description">
-                  Sumamos soporte de software remoto, seguimiento de incidentes y asistencia continua para que
-                  tus clientes sientan respaldo real.
+                  Sumamos soporte de software remoto, seguimiento de incidentes
+                  y asistencia continua para que tus clientes sientan respaldo
+                  real.
                 </p>
                 <ul class="chip-list">
                   <li>Mesa de ayuda</li>
@@ -204,26 +331,44 @@
         <section class="section" id="sobre-nosotros">
           <div class="container about-layout about-layout-single">
             <div class="about-card reveal is-visible">
-              <span class="eyebrow" data-i18n="about.eyebrow">Sobre nosotros</span>
-              <h2 data-i18n="about.title">Socios trabajando a la par para construir soluciones con impacto real.</h2>
+              <span class="eyebrow" data-i18n="about.eyebrow"
+                >Sobre nosotros</span
+              >
+              <h2 data-i18n="about.title">
+                Socios trabajando a la par para construir soluciones con impacto
+                real.
+              </h2>
               <p data-i18n="about.description1">
-                Somos un grupo de socios trabajando a la par en un proyecto nuevo, con una visión compartida:
-                construir soluciones digitales sólidas, útiles y escalables. Combinamos experiencia operativa,
-                conocimiento empresarial, criterio técnico y capacidad de gestión para acompañar a organizaciones
-                que buscan ordenar procesos, mejorar su presencia digital y generar relaciones estratégicas de
-                largo plazo.
+                Somos un grupo de socios trabajando a la par en un proyecto
+                nuevo, con una visión compartida: construir soluciones digitales
+                sólidas, útiles y escalables. Combinamos experiencia operativa,
+                conocimiento empresarial, criterio técnico y capacidad de
+                gestión para acompañar a organizaciones que buscan ordenar
+                procesos, mejorar su presencia digital y generar relaciones
+                estratégicas de largo plazo.
               </p>
               <p data-i18n="about.description2">
-                Nos define la sabiduría práctica adquirida en distintas áreas, la polivalencia para adaptarnos a
-                nuevos desafíos y la convicción de que cada proyecto debe tener impacto real en la operación, la
-                comunicación y el crecimiento del negocio.
+                Nos define la sabiduría práctica adquirida en distintas áreas,
+                la polivalencia para adaptarnos a nuevos desafíos y la
+                convicción de que cada proyecto debe tener impacto real en la
+                operación, la comunicación y el crecimiento del negocio.
               </p>
               <ul class="about-highlights">
-                <li data-i18n="about.point1">Sabiduría práctica aplicada al negocio.</li>
-                <li data-i18n="about.point2">Polivalencia para integrar operación, tecnología y gestión.</li>
-                <li data-i18n="about.point3">Relaciones estratégicas orientadas al largo plazo.</li>
-                <li data-i18n="about.point4">Conocimiento empresarial aplicado a soluciones digitales.</li>
-                <li data-i18n="about.point5">Mirada colaborativa entre socios.</li>
+                <li data-i18n="about.point1">
+                  Sabiduría práctica aplicada al negocio.
+                </li>
+                <li data-i18n="about.point2">
+                  Polivalencia para integrar operación, tecnología y gestión.
+                </li>
+                <li data-i18n="about.point3">
+                  Relaciones estratégicas orientadas al largo plazo.
+                </li>
+                <li data-i18n="about.point4">
+                  Conocimiento empresarial aplicado a soluciones digitales.
+                </li>
+                <li data-i18n="about.point5">
+                  Mirada colaborativa entre socios.
+                </li>
               </ul>
             </div>
           </div>
@@ -238,19 +383,28 @@
             <div class="partners-grid">
               <article class="partner-card reveal is-visible">
                 <div class="partner-avatar">
-                  <img src="./public/assets/team/leonel-rebolledo-round.png" alt="Foto de Leonel Rebolledo" />
+                  <img
+                    src="./public/assets/team/leonel-rebolledo-round.png"
+                    alt="Foto de Leonel Rebolledo"
+                  />
                 </div>
                 <div class="partner-content">
-                  <span class="service-eyebrow">Perfil profesional</span>
+                  <span class="partnet-content">Perfil profesional</span>
                   <h3>Leonel Rebolledo</h3>
-                  <p class="partner-role" data-i18n="partners.leonel.role">Analista Sr | Compras, Datos, Procesos y Mejora Continua</p>
+                  <p class="partner-role" data-i18n="partners.leonel.role">
+                    Analista Sr | Compras, Datos, Procesos y Mejora Continua
+                  </p>
                   <p data-i18n="partners.leonel.description">
-                    Leonel Rebolledo aporta una mirada transversal del negocio, integrando experiencia en compras,
-                    operaciones, análisis de datos, gestión de riesgos y mejora continua. Su recorrido combina
-                    abastecimiento técnico, compras indirectas y MRO, desarrollo y homologación de proveedores,
-                    planificación operativa, gestión logística, soporte IT, administración de activos tecnológicos
-                    y participación en evolución de sistemas ERP. Su enfoque está orientado a generar trazabilidad,
-                    eficiencia, previsibilidad y toma de decisiones basada en información confiable.
+                    Leonel Rebolledo aporta una mirada transversal del negocio,
+                    integrando experiencia en compras, operaciones, análisis de
+                    datos, gestión de riesgos y mejora continua. Su recorrido
+                    combina abastecimiento técnico, compras indirectas y MRO,
+                    desarrollo y homologación de proveedores, planificación
+                    operativa, gestión logística, soporte IT, administración de
+                    activos tecnológicos y participación en evolución de
+                    sistemas ERP. Su enfoque está orientado a generar
+                    trazabilidad, eficiencia, previsibilidad y toma de
+                    decisiones basada en información confiable.
                   </p>
                   <div class="partner-tags">
                     <span>Compras estrategicas</span>
@@ -267,30 +421,57 @@
 
               <article class="partner-card reveal is-visible">
                 <div class="partner-avatar">
-                  <img src="./public/assets/team/alfredo-silva-round.png" alt="Foto de Alfredo Nahuel Silva Balbin" />
+                  <img
+                    src="./public/assets/team/alfredo-silva-round.png"
+                    alt="Foto de Alfredo Nahuel Silva Balbin"
+                  />
                 </div>
                 <div class="partner-content">
-                  <span class="service-eyebrow">Perfil profesional</span>
+                  <span class="partner-content">Perfil profesional</span>
                   <h3>Alfredo Nahuel Silva Balbin</h3>
-                  <p class="partner-role" data-i18n="partners.alfredo.role">Backend Developer | Computer Engineering Student</p>
+                  <p class="partner-role" data-i18n="partners.alfredo.role">
+                    Backend Developer | Computer Engineering Student
+                  </p>
                   <p data-i18n="partners.alfredo.description">
-                    Alfredo Nahuel Silva Balbin aporta el perfil técnico del equipo, con experiencia en desarrollo
-                    backend, diseño de microservicios, construcción de REST APIs e implementación de soluciones
-                    escalables. Su recorrido incluye trabajo con Node.js, Spring Boot, SQL, Docker, Git, pipelines
-                    CI/CD, testing unitario y metodologías ágiles Scrum. También cuenta con experiencia en desarrollo
-                    web freelance, soporte técnico, ReactJS, JavaScript y Python, fortaleciendo la capacidad del
-                    equipo para construir productos digitales sólidos, mantenibles y orientados al rendimiento.
+                    Alfredo Nahuel Silva Balbin aporta el perfil técnico del
+                    equipo, con experiencia en desarrollo backend, diseño de
+                    microservicios, construcción de REST APIs e implementación
+                    de soluciones escalables. Su recorrido incluye trabajo con
+                    Node.js, Spring Boot, SQL, Docker, Git, pipelines CI/CD,
+                    testing unitario y metodologías ágiles Scrum. También cuenta
+                    con experiencia en desarrollo web freelance, soporte
+                    técnico, ReactJS, JavaScript y Python, fortaleciendo la
+                    capacidad del equipo para construir productos digitales
+                    sólidos, mantenibles y orientados al rendimiento.
                   </p>
                   <ul class="about-highlights partner-highlights">
-                    <li data-i18n="partners.alfredo.point1">Más de 3 años de experiencia en desarrollo backend.</li>
-                    <li data-i18n="partners.alfredo.point2">Diseño e implementación de microservicios y REST APIs.</li>
-                    <li data-i18n="partners.alfredo.point3">Optimización de performance con reducción de tiempos de carga del 30%.</li>
-                    <li data-i18n="partners.alfredo.point4">Experiencia en equipos multidisciplinarios y metodologías Scrum.</li>
+                    <li data-i18n="partners.alfredo.point1">
+                      Más de 3 años de experiencia en desarrollo backend.
+                    </li>
+                    <li data-i18n="partners.alfredo.point2">
+                      Diseño e implementación de microservicios y REST APIs.
+                    </li>
+                    <li data-i18n="partners.alfredo.point3">
+                      Optimización de performance con reducción de tiempos de
+                      carga del 30%.
+                    </li>
+                    <li data-i18n="partners.alfredo.point4">
+                      Experiencia en equipos multidisciplinarios y metodologías
+                      Scrum.
+                    </li>
                   </ul>
-                  <span class="english-level" data-i18n="partners.alfredo.english">Inglés avanzado C1</span>
+                  <span
+                    class="english-level"
+                    data-i18n="partners.alfredo.english"
+                    >Inglés avanzado C1</span
+                  >
                   <div class="language-list">
-                    <span data-i18n="partners.alfredo.lang1">Español nativo</span>
-                    <span data-i18n="partners.alfredo.lang2">Portugués nativo</span>
+                    <span data-i18n="partners.alfredo.lang1"
+                      >Español nativo</span
+                    >
+                    <span data-i18n="partners.alfredo.lang2"
+                      >Portugués nativo</span
+                    >
                   </div>
                   <div class="partner-tags">
                     <span>Backend</span>
@@ -314,29 +495,33 @@
         <section class="section">
           <div class="container">
             <div class="section-heading reveal is-visible">
-              <span class="eyebrow" data-i18n="diff.eyebrow">Diferenciales</span>
-              <h2 data-i18n="diff.title">Una presencia digital lista para colaborar y escalar.</h2>
+              <span class="eyebrow" data-i18n="diff.eyebrow"
+                >Diferenciales</span
+              >
+              <h2 data-i18n="diff.title">
+                Una presencia digital lista para colaborar y escalar.
+              </h2>
             </div>
             <div class="details-grid">
               <article class="detail-card reveal is-visible">
                 <h3>Enfoque comercial</h3>
                 <p>
-                  No solo programamos: ordenamos la oferta para que el sitio ayude a vender servicios y
-                  soluciones.
+                  No solo programamos: ordenamos la oferta para que el sitio
+                  ayude a vender servicios y soluciones.
                 </p>
               </article>
               <article class="detail-card reveal is-visible">
                 <h3>Escalable para colaboradores</h3>
                 <p>
-                  La estructura esta separada por datos, componentes y estilos para que varias personas puedan
-                  avanzar sin romper el todo.
+                  La estructura esta separada por datos, componentes y estilos
+                  para que varias personas puedan avanzar sin romper el todo.
                 </p>
               </article>
               <article class="detail-card reveal is-visible">
                 <h3>Listo para personalizar</h3>
                 <p>
-                  Logo, celulares, imagen principal, correos y textos quedaron pensados para cambiarse desde
-                  un solo lugar.
+                  Logo, celulares, imagen principal, correos y textos quedaron
+                  pensados para cambiarse desde un solo lugar.
                 </p>
               </article>
             </div>
@@ -346,33 +531,38 @@
         <section class="section section-highlight" id="soporte">
           <div class="container support-layout">
             <div class="section-heading reveal is-visible">
-              <span class="eyebrow" data-i18n="support.eyebrow">Soporte de software</span>
-              <h2 data-i18n="support.title">Reparación en línea y mesa de ayuda con protagonismo propio.</h2>
+              <span class="eyebrow" data-i18n="support.eyebrow"
+                >Soporte de software</span
+              >
+              <h2 data-i18n="support.title">
+                Reparación en línea y mesa de ayuda con protagonismo propio.
+              </h2>
               <p data-i18n="support.description">
-                No queda escondido como servicio secundario: lo mostramos como una línea fuerte para transmitir
-                confianza, continuidad operativa y acompañamiento.
+                No queda escondido como servicio secundario: lo mostramos como
+                una línea fuerte para transmitir confianza, continuidad
+                operativa y acompañamiento.
               </p>
             </div>
             <div class="support-grid">
               <article class="support-card reveal is-visible">
                 <h3 data-i18n="support.card1.title">Atención remota</h3>
                 <p data-i18n="support.card1.description">
-                  Espacio pensado para ofrecer reparación en línea, asistencia guiada y resolución de fallas
-                  sin fricción.
+                  Espacio pensado para ofrecer reparación en línea, asistencia
+                  guiada y resolución de fallas sin fricción.
                 </p>
               </article>
               <article class="support-card reveal is-visible">
                 <h3 data-i18n="support.card2.title">Seguimiento claro</h3>
                 <p data-i18n="support.card2.description">
-                  Podemos sumar luego tickets, SLAs, estados de casos y canales de contacto según crezca la
-                  operación.
+                  Podemos sumar luego tickets, SLAs, estados de casos y canales
+                  de contacto según crezca la operación.
                 </p>
               </article>
               <article class="support-card reveal is-visible">
                 <h3 data-i18n="support.card3.title">Cobertura evolutiva</h3>
                 <p data-i18n="support.card3.description">
-                  La página ya contempla mantenimiento, mejoras continuas y nuevas líneas de servicio sin
-                  rehacer la base visual.
+                  La página ya contempla mantenimiento, mejoras continuas y
+                  nuevas líneas de servicio sin rehacer la base visual.
                 </p>
               </article>
             </div>
@@ -383,35 +573,50 @@
           <div class="container">
             <div class="section-heading reveal is-visible">
               <span class="eyebrow" data-i18n="process.eyebrow">Proceso</span>
-              <h2 data-i18n="process.title">Un recorrido simple para explicar cómo trabajan ustedes y sus colaboradores.</h2>
+              <h2 data-i18n="process.title">
+                Un recorrido simple para explicar cómo trabajan ustedes y sus
+                colaboradores.
+              </h2>
             </div>
             <div class="timeline">
               <article class="timeline-item reveal is-visible">
                 <span class="timeline-step">01</span>
                 <div>
                   <h3 data-i18n="process.step1.title">Descubrimiento</h3>
-                  <p data-i18n="process.step1.description">Relevamos objetivos, público, canales de venta y necesidades técnicas del negocio.</p>
+                  <p data-i18n="process.step1.description">
+                    Relevamos objetivos, público, canales de venta y necesidades
+                    técnicas del negocio.
+                  </p>
                 </div>
               </article>
               <article class="timeline-item reveal is-visible">
                 <span class="timeline-step">02</span>
                 <div>
                   <h3 data-i18n="process.step2.title">Propuesta</h3>
-                  <p data-i18n="process.step2.description">Ordenamos servicios, alcance y prioridades para construir una presencia digital coherente.</p>
+                  <p data-i18n="process.step2.description">
+                    Ordenamos servicios, alcance y prioridades para construir
+                    una presencia digital coherente.
+                  </p>
                 </div>
               </article>
               <article class="timeline-item reveal is-visible">
                 <span class="timeline-step">03</span>
                 <div>
                   <h3 data-i18n="process.step3.title">Implementación</h3>
-                  <p data-i18n="process.step3.description">Desarrollamos la solución, conectamos formularios o APIs y ajustamos la experiencia responsive.</p>
+                  <p data-i18n="process.step3.description">
+                    Desarrollamos la solución, conectamos formularios o APIs y
+                    ajustamos la experiencia responsive.
+                  </p>
                 </div>
               </article>
               <article class="timeline-item reveal is-visible">
                 <span class="timeline-step">04</span>
                 <div>
                   <h3 data-i18n="process.step4.title">Soporte continuo</h3>
-                  <p data-i18n="process.step4.description">Mantenemos, ampliamos y acompañamos el crecimiento con nuevos módulos y mejoras operativas.</p>
+                  <p data-i18n="process.step4.description">
+                    Mantenemos, ampliamos y acompañamos el crecimiento con
+                    nuevos módulos y mejoras operativas.
+                  </p>
                 </div>
               </article>
             </div>
@@ -421,25 +626,53 @@
         <section class="section section-soft" id="faq">
           <div class="container faq-layout">
             <div class="section-heading reveal is-visible">
-              <span class="eyebrow" data-i18n="faq.eyebrow">Preguntas frecuentes</span>
-              <h2 data-i18n="faq.title">La base ya contempla las consultas típicas de una empresa de tecnología.</h2>
+              <span class="eyebrow" data-i18n="faq.eyebrow"
+                >Preguntas frecuentes</span
+              >
+              <h2 data-i18n="faq.title">
+                La base ya contempla las consultas típicas de una empresa de
+                tecnología.
+              </h2>
             </div>
             <div class="faq-list">
               <details class="faq-item reveal is-visible">
-                <summary data-i18n="faq.q1">¿Se puede reemplazar luego el logo y la imagen principal?</summary>
-                <p data-i18n="faq.a1">Sí. Ambos recursos quedaron como placeholders para que luego se cambien por la identidad visual final de la empresa.</p>
+                <summary data-i18n="faq.q1">
+                  ¿Se puede reemplazar luego el logo y la imagen principal?
+                </summary>
+                <p data-i18n="faq.a1">
+                  Sí. Ambos recursos quedaron como placeholders para que luego
+                  se cambien por la identidad visual final de la empresa.
+                </p>
               </details>
               <details class="faq-item reveal is-visible">
-                <summary data-i18n="faq.q2">¿Los números de celular se pueden actualizar fácil?</summary>
-                <p data-i18n="faq.a2">Sí. Los teléfonos están centralizados en un archivo de contenido para cambiarlos una sola vez y reflejarlos en toda la página.</p>
+                <summary data-i18n="faq.q2">
+                  ¿Los números de celular se pueden actualizar fácil?
+                </summary>
+                <p data-i18n="faq.a2">
+                  Sí. Los teléfonos están centralizados en un archivo de
+                  contenido para cambiarlos una sola vez y reflejarlos en toda
+                  la página.
+                </p>
               </details>
               <details class="faq-item reveal is-visible">
-                <summary data-i18n="faq.q3">¿Esta base sirve para seguir agregando páginas?</summary>
-                <p data-i18n="faq.a3">Sí. La estructura permite sumar nuevas secciones, páginas de servicios, portfolio, blog o área de clientes sin rehacer el proyecto.</p>
+                <summary data-i18n="faq.q3">
+                  ¿Esta base sirve para seguir agregando páginas?
+                </summary>
+                <p data-i18n="faq.a3">
+                  Sí. La estructura permite sumar nuevas secciones, páginas de
+                  servicios, portfolio, blog o área de clientes sin rehacer el
+                  proyecto.
+                </p>
               </details>
               <details class="faq-item reveal is-visible">
-                <summary data-i18n="faq.q4">¿Se puede integrar WhatsApp, formularios o un CRM?</summary>
-                <p data-i18n="faq.a4">Sí. La sección de contacto y la capa de scripts quedaron preparadas para conectar botones, formularios y futuras integraciones.</p>
+                <summary data-i18n="faq.q4">
+                  ¿Se puede integrar WhatsApp, formularios o un CRM?
+                </summary>
+                <p data-i18n="faq.a4">
+                  Sí. La sección de contacto y la capa de scripts quedaron
+                  preparadas para conectar botones, formularios y futuras
+                  integraciones.
+                </p>
               </details>
             </div>
           </div>
@@ -449,14 +682,27 @@
           <div class="container">
             <div class="cta-banner reveal is-visible">
               <div>
-                <span class="eyebrow" data-i18n="cta.eyebrow">Siguiente paso</span>
-                <h2 data-i18n="cta.title">Una base profesional para vender tecnología y dar soporte real.</h2>
+                <span class="eyebrow" data-i18n="cta.eyebrow"
+                  >Siguiente paso</span
+                >
+                <h2 data-i18n="cta.title">
+                  Una base profesional para vender tecnología y dar soporte
+                  real.
+                </h2>
                 <p data-i18n="cta.description">
-                  Este primer armado ya destaca desarrollo web, APIs, aplicaciones web y mesa de ayuda. El
-                  siguiente paso es cargar identidad real, celulares y material comercial.
+                  Este primer armado ya destaca desarrollo web, APIs,
+                  aplicaciones web y mesa de ayuda. El siguiente paso es cargar
+                  identidad real, celulares y material comercial.
                 </p>
               </div>
-              <a class="button button-primary" href="https://wa.me/54113064415?text=Necesito%20asesoramiento%20sobre%20desarrollo%20entre%20otros%20temas" target="_blank" rel="noreferrer" data-i18n="cta.button">Contactar por WhatsApp</a>
+              <a
+                class="button button-primary"
+                href="https://wa.me/54113064415?text=Necesito%20asesoramiento%20sobre%20desarrollo%20entre%20otros%20temas"
+                target="_blank"
+                rel="noreferrer"
+                data-i18n="cta.button"
+                >Contactar por WhatsApp</a
+              >
             </div>
           </div>
         </section>
@@ -465,27 +711,63 @@
       <footer class="site-footer" id="contacto">
         <div class="container footer-grid">
           <div class="footer-brand">
-            <img src="./public/assets/brand-mark.svg" alt="Logo de Acto Digital" />
+            <img
+              src="./public/assets/brand-mark.svg"
+              alt="Logo de Acto Digital"
+            />
             <h2>Acto Digital</h2>
             <p data-i18n="footer.description">
-              Base comercial e institucional para una empresa de desarrollo, aplicaciones web, APIs y mesa de
-              ayuda.
+              Base comercial e institucional para una empresa de desarrollo,
+              aplicaciones web, APIs y mesa de ayuda.
             </p>
           </div>
 
           <div class="footer-card">
-            <span class="footer-title" data-i18n="footer.contactTitle">Canales de contacto</span>
-            <a class="contact-link" href="https://wa.me/54113064415?text=Necesito%20asesoramiento%20sobre%20desarrollo%20entre%20otros%20temas" target="_blank" rel="noreferrer">11-3064-4115</a>
-            <a class="contact-link" href="https://wa.me/54113064415?text=Necesito%20asesoramiento%20sobre%20desarrollo%20entre%20otros%20temas" target="_blank" rel="noreferrer">+54113064415</a>
-            <a class="button button-secondary contact-button" href="https://wa.me/54113064415?text=Necesito%20asesoramiento%20sobre%20desarrollo%20entre%20otros%20temas" target="_blank" rel="noreferrer" data-i18n="footer.whatsappButton">Contactar por WhatsApp</a>
-            <a class="contact-link" href="mailto:Leonel.hr@hotmail.com">Leonel.hr@hotmail.com</a>
+            <span class="footer-title" data-i18n="footer.contactTitle"
+              >Canales de contacto</span
+            >
+            <a
+              class="contact-link"
+              href="https://wa.me/54113064415?text=Necesito%20asesoramiento%20sobre%20desarrollo%20entre%20otros%20temas"
+              target="_blank"
+              rel="noreferrer"
+              >11-3064-4115</a
+            >
+            <a
+              class="contact-link"
+              href="https://wa.me/54113064415?text=Necesito%20asesoramiento%20sobre%20desarrollo%20entre%20otros%20temas"
+              target="_blank"
+              rel="noreferrer"
+              >+54113064415</a
+            >
+            <a
+              class="button button-secondary contact-button"
+              href="https://wa.me/54113064415?text=Necesito%20asesoramiento%20sobre%20desarrollo%20entre%20otros%20temas"
+              target="_blank"
+              rel="noreferrer"
+              data-i18n="footer.whatsappButton"
+              >Contactar por WhatsApp</a
+            >
+            <a class="contact-link" href="mailto:Leonel.hr@hotmail.com"
+              >Leonel.hr@hotmail.com</a
+            >
             <span class="footer-location">Buenos Aires, Argentina</span>
           </div>
 
           <div class="footer-card">
-            <span class="footer-title" data-i18n="footer.nextTitle">Qué sigue</span>
-            <p data-i18n="footer.nextDescription">Reemplazar placeholders, sumar celulares reales, logo definitivo, imagen de empresa y formularios conectados.</p>
-            <a class="button button-secondary" href="#inicio" data-i18n="footer.backTop">Volver arriba</a>
+            <span class="footer-title" data-i18n="footer.nextTitle"
+              >Qué sigue</span
+            >
+            <p data-i18n="footer.nextDescription">
+              Reemplazar placeholders, sumar celulares reales, logo definitivo,
+              imagen de empresa y formularios conectados.
+            </p>
+            <a
+              class="button button-secondary"
+              href="#inicio"
+              data-i18n="footer.backTop"
+              >Volver arriba</a
+            >
           </div>
         </div>
       </footer>
@@ -499,11 +781,12 @@
       aria-label="Contacto por WhatsApp"
     >
       <svg viewBox="0 0 32 32" aria-hidden="true">
-        <path d="M16.03 3C8.85 3 3 8.77 3 15.88c0 2.49.73 4.91 2.11 6.99L3 29l6.31-2.02a13.1 13.1 0 0 0 6.72 1.84h.01c7.18 0 13.03-5.77 13.03-12.88C29.07 8.77 23.22 3 16.03 3Zm0 23.66h-.01a10.9 10.9 0 0 1-5.56-1.52l-.4-.24-3.74 1.2 1.22-3.63-.26-.42a10.67 10.67 0 0 1-1.63-5.67C5.65 10.56 10.29 6 16.03 6c5.73 0 10.39 4.56 10.39 10.18 0 5.62-4.66 10.18-10.39 10.18Zm5.7-7.7c-.31-.15-1.82-.89-2.1-.99-.28-.1-.49-.15-.7.15-.2.3-.8.99-.98 1.2-.18.2-.36.23-.67.08-.31-.15-1.3-.47-2.48-1.5-.91-.8-1.53-1.8-1.71-2.1-.18-.3-.02-.46.13-.61.13-.13.31-.33.46-.5.15-.18.2-.3.31-.5.1-.2.05-.38-.03-.53-.08-.15-.7-1.67-.95-2.29-.25-.6-.5-.52-.7-.53l-.59-.01c-.2 0-.53.08-.8.38-.28.3-1.06 1.04-1.06 2.53s1.08 2.94 1.23 3.15c.15.2 2.12 3.36 5.24 4.57.74.29 1.31.46 1.76.58.74.19 1.41.16 1.94.1.59-.07 1.82-.74 2.08-1.45.26-.71.26-1.32.18-1.45-.07-.13-.28-.2-.59-.35Z"/>
+        <path
+          d="M16.03 3C8.85 3 3 8.77 3 15.88c0 2.49.73 4.91 2.11 6.99L3 29l6.31-2.02a13.1 13.1 0 0 0 6.72 1.84h.01c7.18 0 13.03-5.77 13.03-12.88C29.07 8.77 23.22 3 16.03 3Zm0 23.66h-.01a10.9 10.9 0 0 1-5.56-1.52l-.4-.24-3.74 1.2 1.22-3.63-.26-.42a10.67 10.67 0 0 1-1.63-5.67C5.65 10.56 10.29 6 16.03 6c5.73 0 10.39 4.56 10.39 10.18 0 5.62-4.66 10.18-10.39 10.18Zm5.7-7.7c-.31-.15-1.82-.89-2.1-.99-.28-.1-.49-.15-.7.15-.2.3-.8.99-.98 1.2-.18.2-.36.23-.67.08-.31-.15-1.3-.47-2.48-1.5-.91-.8-1.53-1.8-1.71-2.1-.18-.3-.02-.46.13-.61.13-.13.31-.33.46-.5.15-.18.2-.3.31-.5.1-.2.05-.38-.03-.53-.08-.15-.7-1.67-.95-2.29-.25-.6-.5-.52-.7-.53l-.59-.01c-.2 0-.53.08-.8.38-.28.3-1.06 1.04-1.06 2.53s1.08 2.94 1.23 3.15c.15.2 2.12 3.36 5.24 4.57.74.29 1.31.46 1.76.58.74.19 1.41.16 1.94.1.59-.07 1.82-.74 2.08-1.45.26-.71.26-1.32.18-1.45-.07-.13-.28-.2-.59-.35Z"
+        />
       </svg>
       <span data-i18n="floating.contact">Contacto</span>
     </a>
-
     <script src="./src/scripts/enhance.js"></script>
   </body>
 </html>

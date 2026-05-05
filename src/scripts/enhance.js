@@ -351,6 +351,35 @@ const translations = {
   },
 };
 
+const btn = document.getElementById("toggleTheme");
+
+// cargar
+if (localStorage.getItem("theme") === "light") {
+  document.body.classList.add("light-mode");
+}
+
+btn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+});
+// toggle
+btn.addEventListener("click", () => {
+  document.body.classList.toggle("light-mode");
+
+  if (document.body.classList.contains("light-mode")) {
+    localStorage.setItem("theme", "light");
+  } else {
+    localStorage.setItem("theme", "dark");
+  }
+});
+
+if (!savedTheme) {
+  const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+  if (prefersLight) {
+    body.classList.add("light-mode");
+  }
+}
+
+
 const setLanguage = (lang) => {
   const locale = translations[lang] ? lang : "es";
   document.documentElement.lang = locale;
