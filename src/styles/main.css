@@ -85,8 +85,8 @@ body.light-mode {
 /* La luna es negra */
 .theme-btn .moon {
   display: block;
-  stroke: #000000;
-  fill: #000000;
+  stroke: #ffffff;
+  fill: #ffffff;
 }
 /* El sol está oculto */
 .theme-btn .sun {
@@ -106,8 +106,8 @@ body.dark-mode .theme-btn .moon {
 /* Mostramos el sol en blanco */
 body.dark-mode .theme-btn .sun {
   display: block;
-  stroke: #ffffff;
-  fill: #ffffff;
+  stroke: #060611;
+  fill: #060611;
 }
 
 /* Suavizar el cambio de color */
